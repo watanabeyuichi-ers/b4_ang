@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-// import { MatDialogModule } from '@angular/material/dialog';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,15 +29,15 @@ import { ConfirmDialogComponent } from './tools/confirm-dialog/confirm-dialog.co
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // MatDialogModule,
-    // BrowserAnimationsModule
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [
     UserService
   ],
-  // entryComponents: [
-  //   ConfirmDialogComponent
-  // ],
+  entryComponents: [
+    ConfirmDialogComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
