@@ -5,6 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//material component
+
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
