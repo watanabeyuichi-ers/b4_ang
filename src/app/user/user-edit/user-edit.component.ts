@@ -12,8 +12,8 @@ import { UserService } from '../user.service';
   styleUrls: ['./user-edit.component.css']
 })
 export class UserEditComponent implements OnInit {
-  user: User = { id: 0, name: '', email: '' };
-
+  // user: User = { id: 0, name: '', email: '' };
+  user: User = { id: 0, name: '', favofood: '',age: 0 };
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -34,7 +34,9 @@ export class UserEditComponent implements OnInit {
     let user = {
       id: form.id,
       name: form.name,
-      email: form.email
+      // email: form.email
+      favofood: form.favofood,
+      age: form.age
     };
     let dialogRef = this.dialog.open(ConfirmDialogComponent, {
       width: '300px',

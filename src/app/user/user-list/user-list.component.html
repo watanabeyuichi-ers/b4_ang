@@ -1,10 +1,13 @@
 <!-- <p>user-list works!</p> -->
 <h1>Users</h1>
 <table>
-    <tr><th>Id</th><th>Name</th><th>Email</th></tr>
+    <!-- <tr><th>Id</th><th>Name</th><th>Email</th></tr> -->
+    <tr><th>Id</th><th>Name</th><th>Age</th><th>Favofood</th></tr>
     <tr *ngFor="let user of users">
       <td>{{user.id}}</td>
       <td><a routerLink="/users/{{user.id}}/edit">{{user.name}}</a></td>
-      <td>{{user.email}}</td>
+      <!-- <td>{{user.email}}</td> -->
+      <td>{{user.age}}</td>
+      <td>{{user.favofood}}</td>
     </tr>
   </table>
