@@ -6,7 +6,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //material component
-
+import 'hammerjs';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -36,7 +40,11 @@ import { ConfirmDialogComponent } from './tools/confirm-dialog/confirm-dialog.co
     FormsModule,
     HttpClientModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatCardModule,
+    MatFormFieldModule
   ],
   providers: [
     UserService
